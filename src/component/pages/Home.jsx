@@ -11,13 +11,8 @@ function Home() {
           <li>
             <span> sass:</span> <code> node-sass --save</code>
           </li>
-          <li className='Tooltip'>
+          <li>
             <span> nav:</span> <code> react-router-dom</code>
-            <span class='tooltiptext'>
-              hvis du ville kunne følge det her skal du bruge vasionar under 6
-              det gør du ved at sette "@5.2.0" baved. <br /> 5.2.0 er den jeg
-              selv bruger
-            </span>
           </li>
         </ul>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Usestate from "../pages/UseState";
 import NotFound from "../pages/NotFound";
@@ -17,11 +17,11 @@ export default function Nav() {
           </li>
         </ul>
       </nav>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/usestate' component={Usestate} />
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route path='/usestate' element={<Usestate />} />
         <Route component={NotFound} />
-      </Switch>
+      </Routes>
     </Router>
   );
 }
